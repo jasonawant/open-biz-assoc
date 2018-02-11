@@ -34,7 +34,7 @@ script:
 
   # Get the DB for more advanced things
   - lando terminus auth:login -- machine-token=$PANTHEON_MACHINE_TOKEN
-  - lando pull --code=none --database=dev --files=dev --rsync
+  - lando pull -- code=none -- database=dev -- files=dev -- rsync
 
   # Check if we can bootstrap the site.
   - cd web
