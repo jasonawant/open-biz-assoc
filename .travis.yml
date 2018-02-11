@@ -42,7 +42,7 @@ script:
   # - cd ..
 
   # Run Behat tests.
-  - lando behat --config=/app/tests/behat-pantheon.yml
+  - lando behat -- config=/app/tests/behat-pantheon.yml
 
   # Do the multidev as needed
   - |
